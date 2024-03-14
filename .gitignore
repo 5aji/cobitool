@@ -1,0 +1,10 @@
+/cobi_interface_vivado/cobi_interface.cache/
+/cobi_interface_vivado/cobi_interface.gen/
+/cobi_interface_vivado/cobi_interface.hw/
+/cobi_interface_vivado/cobi_interface.runs/
+/cobi_interface_vivado/cobi_interface.sim/
+/cobi_interface_vivado/cobi_interface.ip_user_files/
+**/.Xil/
+*.d
+*.o
+software/bin/*

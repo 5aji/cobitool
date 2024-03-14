@@ -1,0 +1,54 @@
+From 4431287bbdb837754429b2d6f906acc73d323989 Mon Sep 17 00:00:00 2001
+From: not real <fake>
+Date: Thu, 20 Apr 2023 23:38:10 -0500
+Subject: [PATCH] hi
+
+---
+ lib/sw_apps/zynqmp_fsbl/src/xfsbl_board.c | 12 +++++++-----
+ 1 file changed, 7 insertions(+), 5 deletions(-)
+
+diff --git a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_board.c b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_board.c
+index 328332402d..d77c0c6972 100644
+--- a/lib/sw_apps/zynqmp_fsbl/src/xfsbl_board.c
++++ b/lib/sw_apps/zynqmp_fsbl/src/xfsbl_board.c
+@@ -74,12 +74,13 @@ static void XFsbl_PcieReset(void);
+  *****************************************************************************/
+ static u32 XFsbl_ReadMinMaxEepromVadj(XIicPs* I2c0InstancePtr, u32 *MinVadj, u32 *MaxVadj)
+ {
+-	u32 Count;
++/*	u32 Count;
+ 	u32 EepromByteCount;
+ 	XMultipleRecord XRecord;
+ 	u8 WriteBuffer[BUF_LEN] = {0U};
+-	u8 Read_Buffer[MAX_SIZE]= {0U};
++	u8 Read_Buffer[MAX_SIZE]= {0U}; */
+ 	u32 UStatus;
++#if 0
+ 	s32 Status;
+ 	u32 NominalVoltage;
+ 	u32 EepromAddr = 0x54U;
+@@ -170,9 +171,10 @@ static u32 XFsbl_ReadMinMaxEepromVadj(XIicPs* I2c0InstancePtr, u32 *MinVadj, u32
+ 		}
+ 
+ 	}
++#endif
+ 
+-	*MinVadj = MinVoltage;
+-	*MaxVadj = MaxVoltage;
++	*MinVadj = 1800;
++	*MaxVadj = 1800;
+ 	UStatus = XFSBL_SUCCESS;
+ END:
+ 	return UStatus;
+@@ -205,7 +207,7 @@ static u32 XFsbl_CalVadj(u16 MinVoltage, u16 MaxVoltage)
+ 		XFsbl_Printf(DEBUG_GENERAL, "Calc_Vadj is VADJ_0V0\r\n");
+ 	}
+ 
+-	return(VadjValue);
++	return(SET_VADJ_1V8);
+ }
+ #endif
+ /*****************************************************************************/
+-- 
+2.34.1
+

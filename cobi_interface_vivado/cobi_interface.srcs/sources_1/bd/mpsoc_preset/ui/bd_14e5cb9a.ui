@@ -1,0 +1,69 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.747755",
+   "Default View_TopLeft":"-280,-292",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r4  2019-12-20 bk=1.5203 VDI=41 GEI=36 GUI=JA:10.0 TLS
+#  -string -flagsOSRD
+preplace port port-id_bram0_en -pg 1 -lvl 0 -x -100 -y 440 -defaultsOSRD
+preplace port port-id_bram0_rst -pg 1 -lvl 0 -x -100 -y 560 -defaultsOSRD
+preplace port port-id_bram0_clk -pg 1 -lvl 0 -x -100 -y 500 -defaultsOSRD
+preplace port port-id_bram1_clk -pg 1 -lvl 0 -x -100 -y 780 -defaultsOSRD
+preplace port port-id_bram1_en -pg 1 -lvl 0 -x -100 -y 840 -defaultsOSRD
+preplace port port-id_bram1_rst -pg 1 -lvl 0 -x -100 -y 860 -defaultsOSRD
+preplace port port-id_pl_clk0 -pg 1 -lvl 5 -x 1990 -y -80 -defaultsOSRD
+preplace portBus bram0_addr -pg 1 -lvl 0 -x -100 -y 360 -defaultsOSRD
+preplace portBus bram0_din -pg 1 -lvl 0 -x -100 -y 400 -defaultsOSRD
+preplace portBus bram0_we -pg 1 -lvl 0 -x -100 -y 580 -defaultsOSRD
+preplace portBus bram0_dout -pg 1 -lvl 5 -x 1990 -y 320 -defaultsOSRD
+preplace portBus bram1_addr -pg 1 -lvl 0 -x -100 -y 760 -defaultsOSRD
+preplace portBus bram1_din -pg 1 -lvl 0 -x -100 -y 800 -defaultsOSRD
+preplace portBus bram1_we -pg 1 -lvl 0 -x -100 -y 880 -defaultsOSRD
+preplace portBus bram1_dout -pg 1 -lvl 5 -x 1990 -y 640 -defaultsOSRD
+preplace portBus input_flags -pg 1 -lvl 0 -x -100 -y -40 -defaultsOSRD
+preplace portBus output_flags -pg 1 -lvl 5 -x 1990 -y 200 -defaultsOSRD
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 1 -x 470 -y 90 -defaultsOSRD
+preplace inst axi_gpio_0 -pg 1 -lvl 3 -x 1340 -y 210 -defaultsOSRD
+preplace inst ps8_0_axi_periph -pg 1 -lvl 2 -x 970 -y -10 -defaultsOSRD
+preplace inst rst_ps8_0_100M -pg 1 -lvl 1 -x 470 -y 290 -defaultsOSRD
+preplace inst axi_bram_ctrl_0 -pg 1 -lvl 3 -x 1340 -y 490 -defaultsOSRD
+preplace inst axi_bram_ctrl_0_bram -pg 1 -lvl 4 -x 1840 -y 460 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 3 -x 1340 -y 30 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 4 -x 1840 -y 800 -defaultsOSRD
+preplace inst axi_bram_ctrl_1 -pg 1 -lvl 3 -x 1340 -y 690 -defaultsOSRD
+preplace netloc rst_ps8_0_100M_peripheral_aresetn 1 1 2 810 -210 1150
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 5 -80 180 790 -200 1140 -80 N -80 N
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 2 -70 190 780
+preplace netloc bram0_addr_1 1 0 4 -70J 390 NJ 390 NJ 390 1530
+preplace netloc bram0_din_1 1 0 4 -80J 410 NJ 410 NJ 410 1510
+preplace netloc bram0_en_1 1 0 4 NJ 440 800J 380 NJ 380 1490
+preplace netloc bram0_clk_1 1 0 4 -70J 400 NJ 400 NJ 400 1520
+preplace netloc bram0_rst_1 1 0 4 NJ 560 NJ 560 1120J 570 1500
+preplace netloc bram0_we_1 1 0 4 NJ 580 NJ 580 NJ 580 1530
+preplace netloc axi_bram_ctrl_0_bram_doutb 1 3 2 1540 320 N
+preplace netloc bram1_we_1 1 0 4 NJ 880 NJ 880 NJ 880 N
+preplace netloc bram1_rst_1 1 0 4 NJ 860 NJ 860 NJ 860 N
+preplace netloc bram1_en_1 1 0 4 NJ 840 NJ 840 NJ 840 N
+preplace netloc bram1_din_1 1 0 4 NJ 800 NJ 800 NJ 800 N
+preplace netloc bram1_clk_1 1 0 4 NJ 780 NJ 780 NJ 780 N
+preplace netloc bram1_addr_1 1 0 4 NJ 760 NJ 760 1140J 770 1510
+preplace netloc blk_mem_gen_0_doutb 1 3 2 1540 640 NJ
+preplace netloc input_flags_1 1 0 4 -80J -220 NJ -220 NJ -220 1540
+preplace netloc axi_gpio_0_gpio_io_o 1 3 2 N 200 NJ
+preplace netloc axi_bram_ctrl_0_BRAM_PORTA 1 3 1 1500 380n
+preplace netloc axi_bram_ctrl_1_BRAM_PORTA 1 3 1 1510 690n
+preplace netloc ps8_0_axi_periph_M00_AXI 1 2 1 1170 -30n
+preplace netloc ps8_0_axi_periph_M01_AXI 1 2 1 1160 -10n
+preplace netloc ps8_0_axi_periph_M02_AXI 1 2 1 1130 10n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 1 1 780 -140n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 1 1 800 -120n
+levelinfo -pg 1 -100 470 970 1340 1840 1990
+pagesize -pg 1 -db -bbox -sgen -280 -340 2180 1300
+"
+}
+{
+   "da_axi4_cnt":"3",
+   "da_board_cnt":"2",
+   "da_bram_cntlr_cnt":"2",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}
